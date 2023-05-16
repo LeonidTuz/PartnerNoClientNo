@@ -2,7 +2,7 @@
 
 namespace PartnerNoClientNo.Models.Pyrus
 {
-    public class ClientField : Field
+    public class ClientField
     {
         [JsonPropertyName("value")]
         public ChoiceValue Value { get; set; }

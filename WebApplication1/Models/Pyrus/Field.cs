@@ -2,7 +2,7 @@
 
 namespace PartnerNoClientNo.Models.Pyrus
 {
-    public class Field
+    public class Field: ClientField
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }
