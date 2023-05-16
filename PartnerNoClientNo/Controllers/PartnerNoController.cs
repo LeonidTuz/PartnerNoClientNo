@@ -25,7 +25,6 @@ namespace PartnerNoClientNo.Controllers
 
             var response = new FieldUpdates { FieldUpdate =  fieldUpdatesList, ApprovalChoice = "approved"};
 
-
             try
             {
                 
@@ -37,10 +36,5 @@ namespace PartnerNoClientNo.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
-
-
-
-
-
     }
 }
