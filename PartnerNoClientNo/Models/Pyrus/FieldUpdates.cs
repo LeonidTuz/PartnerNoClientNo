@@ -8,5 +8,6 @@ namespace PartnerNoClientNo.Models.Pyrus
         public List<Field>? FieldUpdate { get; set; }
         [JsonPropertyName("approval_choice")]
         public string? ApprovalChoice { get; set; }
+
     }
 }

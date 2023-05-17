@@ -8,17 +8,20 @@ namespace PartnerNoClientNo.Controllers
     [Route("[controller]")]
     public class PartnerNoController : Controller
     {
-
-        Response response = new Response();
+        readonly string _json;
+        public PartnerNoController() 
+        {
+            Response response = new Response();
+            _json = response.FieldUpdatesJson();
+        }
 
         [HttpPost]
         public async Task<IActionResult> SetClientNoPartnerNoDueNull()
         {
-            string json = response.FieldUpdatesJson();
 
             try
             {
-                return Ok(json);
+                return Ok(_json);
             }
             catch (Exception ex)
             {
