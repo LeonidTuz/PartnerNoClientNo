@@ -2,7 +2,7 @@
 
 namespace PartnerNoClientNo.Models.Pyrus
 {
-    public class Response : IResponse
+    public class Response
     {
         private readonly JsonSerializerOptions _options;
 
