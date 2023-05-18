@@ -9,9 +9,8 @@ namespace PartnerNoClientNo.Controllers
     public class PartnerNoController : Controller
     {
         readonly string _json;
-        public PartnerNoController() 
+        public PartnerNoController(Response response) 
         {
-            Response response = new Response();
             _json = response.FieldUpdatesJson();
         }
 
